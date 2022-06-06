@@ -36,10 +36,8 @@ def solve(x):
     if not_solved(x):
         if not_solved(g[x][1]):
             solve(g[x][1])
-        if g[x][0].__name__ == "gate":
-            if "SHIFT" not in g[x][2]:
-                if not_solved(g[x][3]):
-                    solve(g[x][3])
+        if g[x][0].__name__ == "gate" and "SHIFT" not in g[x][2] and not_solved(g[x][3]):
+            solve(g[x][3])
         g[x][0](*g[x][1:])
 
 
