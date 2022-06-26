@@ -25,7 +25,7 @@ Now, given the same instructions, find the position of the first character that 
 
 For example:
 
-```python
+```
 ) causes him to enter the basement at character position 1.
 ()()) causes him to enter the basement at character position 5.
 ```
